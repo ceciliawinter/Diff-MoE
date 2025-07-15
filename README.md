@@ -1,8 +1,6 @@
-# Diff-MoE
+# Diff-MoE: Efficient Batched MoE Inference with Priority-Driven Differential Expert Caching
 
 ## Setup
-
-
 
 ```bash
 
@@ -42,7 +40,7 @@ pip install -r ../requirement.txt
 
 ## Prepare models
 
-You may fine-tune the model on downstream tasks to generate adapter files. Name each adapter file as $model-$dataset and place them in the /data directory.
+You may fine-tune the model on downstream tasks to generate adapter files. Name each adapter file as `${model}-${dataset}` and place them in the `/data` directory.
 
 ```bash
 mkdir /data/ft
@@ -58,7 +56,7 @@ cd /workspace/FasterTransformer/
 
 ## Evaluation
 
-logs will be output to the /logs/$model directory.
+logs will be output to the `/logs/${model}` directory.
 
 ```bash
 cd /workspace/FasterTransformer/
